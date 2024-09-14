@@ -269,7 +269,7 @@ const Hero1 = () => {
               key={hero.id}
               className="flex flex-col md:flex-row items-start md:items-center xlg:items-center justify-center md:justify-start md:px-8 md:py-10 rounded-xl h-[90vh] md:h-[85vh]"
             >
-              <div className="flex flex-col items-start ml-[30px] mr-[30px] md:mx-10 w-[100%] md:w-[70%] xlg:w-[60%]">
+              <div className="flex flex-col items-start ml-[30px] mr-[30px] md:mx-10 w-[100%] md:w-[80%] xlg:w-[60%]">
                 <p className="text-[#DFD0B8] mb-4 text-[40px] md:text-[60px] leading-[50px] md:leading-[85px] font-1200 md:font-bold tracking-widest font-Poppins w-[100%]">
                   {hero.title}
                 </p>
@@ -351,9 +351,99 @@ const Hero1 = () => {
               </div>
             </SplideSlide>
           ))}
+          
         </Splide>
       </div>
     </section>
   );
 };
 export default Hero1;
+
+
+// {heroContent.map((hero) => (
+//   <SplideSlide
+//     key={hero.id}
+//     className="flex flex-col md:flex-row items-start md:items-center xlg:items-center justify-center md:justify-start md:px-8 md:py-10 rounded-xl h-[90vh] md:h-[85vh]"
+//   >
+//     <div className="flex flex-col items-start ml-[30px] mr-[30px] md:mx-10 w-[100%] md:w-[80%] xlg:w-[60%]">
+//       <p className="text-[#DFD0B8] mb-4 text-[40px] md:text-[60px] leading-[50px] md:leading-[85px] font-1200 md:font-bold tracking-widest font-Poppins w-[100%]">
+//         {hero.title}
+//       </p>
+//       <div className="flex flex-col">
+//         {/* <div className="flex space-x-1">
+//               {Array(5).fill(0).map((_, i) => (
+//                 <span key={i} className={`star ${i < review.rating ? 'text-yellow-500' : 'text-gray-400'}`}>&#9733;</span>
+//               ))}
+//             </div> */}
+//         <p className="font-bold md:font-medium text-[12px] tracking-widest md:text-[20px] mt-1 text-[#948979] font-Poppins">
+//           {hero.subtitle}
+//         </p>
+//         <p className="text-[10px] tracking-widest md:text-[15px] mt-[5px] md:mt-0 mb-[20px] text-[#948979] font-Poppins font-bold md:font-600">
+//           {hero.subTitleUnder}
+//         </p>
+//       </div>
+//       <div className="border border-dashed border-[#A9A9AA] tracking-widest mb-4 w-[80%] md:w-[100%]" />
+
+//       <div className="flex flex-col 1300px:flex-row gap-2 md:gap-5 pt-[20px] md:pt-0 md:mt-[40px]">
+//         <div className="w-[80%] md:w-[100%] pb-[20px] md:pb-0 mr-[30px] md:mr-[50px]">
+//           <img src={logo} alt="golden color logo" />
+//         </div>
+//         <div className="flex flex-row items-center gap-[5px] md:gap-1">
+//           <Link to="/products">
+//             <div className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-[#153448] transition duration-300 ease-out rounded-[50px] md:w-[200px] md:h-[60px] w-[40vw] h-[20px] group bg-[#DFD0B8] border border-[#DFD0B8]">
+//               <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#3C5B6F] group-hover:translate-x-0 ease">
+//                 <svg
+//                   class="w-6 h-6"
+//                   fill="none"
+//                   stroke="#DFD0B8"
+//                   viewBox="0 0 24 24"
+//                   xmlns="http://www.w3.org/2000/svg"
+//                 >
+//                   <path
+//                     stroke-linecap="round"
+//                     stroke-linejoin="round"
+//                     stroke-width="2"
+//                     d="M14 5l7 7m0 0l-7 7m7-7H3"
+//                   ></path>
+//                 </svg>
+//               </span>
+//               <p className="text-[10px] md:text-[20px] trackind-wide flex items-center justify-center w-full h-full text-[#3C5B6F] transition-all duration-300 transform group-hover:translate-x-full ease">
+//                 View Plans
+//               </p>
+//             </div>
+//           </Link>
+//           <Link to="/products">
+//             <div className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-[#153448] transition duration-300 ease-out rounded-[50px] md:w-[200px] md:h-[60px] w-[40vw] h-[20px] group bg-[#3C5B6F] border border-[#DFD0B8] hover:scale-105 md:hover:scale-100">
+//               <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#DFD0B8] group-hover:translate-x-0 ease">
+//                 <svg
+//                   class="w-6 h-6"
+//                   fill="none"
+//                   stroke="currentColor"
+//                   viewBox="0 0 24 24"
+//                   xmlns="http://www.w3.org/2000/svg"
+//                 >
+//                   <path
+//                     stroke-linecap="round"
+//                     stroke-linejoin="round"
+//                     stroke-width="2"
+//                     d="M14 5l7 7m0 0l-7 7m7-7H3"
+//                   ></path>
+//                 </svg>
+//               </span>
+//               <p className="text-[10px] md:text-[20px] trackind-wide flex items-center justify-center w-full h-full text-[#DFD0B8] transition-all duration-300 transform group-hover:translate-x-full ease ">
+//                 Buy Yarns
+//               </p>
+//             </div>
+//           </Link>
+//         </div>
+//       </div>
+//     </div>
+//     <div className="my-[30px] mx-auto md:mx-1 md:flex md:items-center  p-0 rounded-full ">
+//       <img
+//         className="w-[200px] h-[100%] md:w-[450px] md:h-[450px] xlg:w-[500px] xlg:h-[500px] rounded-full object-fill"
+//         src={hero.image}
+//         alt=""
+//       />
+//     </div>
+//   </SplideSlide>
+// ))}
