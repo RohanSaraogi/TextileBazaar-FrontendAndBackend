@@ -18,6 +18,7 @@ module.exports = {
         "400px":"400px",
         "lg":"1024px",
         "md":"768px",
+        "xlg":"1440px",
       },
       
       animation: {

@@ -269,8 +269,8 @@ const Hero1 = () => {
               key={hero.id}
               className="flex flex-col md:flex-row items-start justify-center md:justify-start md:px-8 md:py-10 rounded-xl h-[90vh] md:h-[85vh]"
             >
-              <div className="flex flex-col items-start ml-[30px] mr-[30px] md:mx-10 w-[100%] md:w-[70%] ">
-                <p className="text-[#DFD0B8] mb-4 text-[40px] md:text-[80px] leading-[50px] md:leading-[85px] font-1200 md:font-bold tracking-widest font-Poppins">
+              <div className="flex flex-col items-start ml-[30px] mr-[30px] md:mx-10 w-[100%] md:w-[80%] ">
+                <p className="text-[#DFD0B8] mb-4 text-[40px] md:text-[60px] leading-[50px] md:leading-[85px] font-1200 md:font-bold tracking-widest font-Poppins w-[100%]">
                   {hero.title}
                 </p>
                 <div className="flex flex-col">
@@ -279,10 +279,10 @@ const Hero1 = () => {
                           <span key={i} className={`star ${i < review.rating ? 'text-yellow-500' : 'text-gray-400'}`}>&#9733;</span>
                         ))}
                       </div> */}
-                  <p className="font-bold md:font-medium text-[12px] tracking-widest md:text-[40px] mt-1 text-[#948979] font-Poppins">
+                  <p className="font-bold md:font-medium text-[12px] tracking-widest md:text-[20px] mt-1 text-[#948979] font-Poppins">
                     {hero.subtitle}
                   </p>
-                  <p className="text-[10px] tracking-widest md:text-[25px] mt-[5px] md:mt-0 mb-[20px] text-[#948979] font-Poppins font-bold md:font-600">
+                  <p className="text-[10px] tracking-widest md:text-[15px] mt-[5px] md:mt-0 mb-[20px] text-[#948979] font-Poppins font-bold md:font-600">
                     {hero.subTitleUnder}
                   </p>
                 </div>
