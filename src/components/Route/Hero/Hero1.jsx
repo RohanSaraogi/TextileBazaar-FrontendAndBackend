@@ -267,9 +267,9 @@ const Hero1 = () => {
           {heroContent.map((hero) => (
             <SplideSlide
               key={hero.id}
-              className="flex flex-col md:flex-row items-start justify-center md:justify-start md:px-8 md:py-10 rounded-xl h-[90vh] md:h-[85vh]"
+              className="flex flex-col md:flex-row items-start md:items-center xlg:items-center justify-center md:justify-start md:px-8 md:py-10 rounded-xl h-[90vh] md:h-[85vh]"
             >
-              <div className="flex flex-col items-start ml-[30px] mr-[30px] md:mx-10 w-[100%] md:w-[80%] ">
+              <div className="flex flex-col items-start ml-[30px] mr-[30px] md:mx-10 w-[100%] md:w-[70%] xlg:w-[60%]">
                 <p className="text-[#DFD0B8] mb-4 text-[40px] md:text-[60px] leading-[50px] md:leading-[85px] font-1200 md:font-bold tracking-widest font-Poppins w-[100%]">
                   {hero.title}
                 </p>
@@ -288,7 +288,7 @@ const Hero1 = () => {
                 </div>
                 <div className="border border-dashed border-[#A9A9AA] tracking-widest mb-4 w-[80%] md:w-[100%]" />
 
-                <div className="flex flex-col md:flex-row gap-2 md:gap-5 pt-[20px] md:pt-0 md:mt-[40px]">
+                <div className="flex flex-col 1300px:flex-row gap-2 md:gap-5 pt-[20px] md:pt-0 md:mt-[40px]">
                   <div className="w-[80%] md:w-[100%] pb-[20px] md:pb-0 mr-[30px] md:mr-[50px]">
                     <img src={logo} alt="golden color logo" />
                   </div>
@@ -344,7 +344,7 @@ const Hero1 = () => {
               </div>
               <div className="my-[30px] mx-auto md:mx-1 md:flex md:items-center  p-0 rounded-full ">
                 <img
-                  className="w-[200px] h-[100%] md:w-[450px] md:h-[450px] rounded-full object-fill"
+                  className="w-[200px] h-[100%] md:w-[450px] md:h-[450px] xlg:w-[500px] xlg:h-[500px] rounded-full object-fill"
                   src={hero.image}
                   alt=""
                 />
