@@ -316,7 +316,7 @@ const Header = ({ activeHeading }) => {
         }
       w-full h-[60px]  z-50 top-0 left-0 shadow-sm 1000px:hidden bg-gradient-to-r from-[#153448] from-90% to-[#3C5B6F] to-95%`}
       >
-        <div className="w-full h-[100vh] flex items-center justify-around">
+        <div className="w-full flex items-center justify-between">
           <div className="text-[#DFD0B8]">
             <BiMenuAltLeft
               size={40}
@@ -413,7 +413,7 @@ const Header = ({ activeHeading }) => {
               <Navbar active={activeHeading} />
               <div className={`${styles.button} mx-auto rounded-2xl bg-[#3C5B6F] items-center`}>
                 <Link to="/shop-create">
-                  <h1 className="text-[#DFD0B8] font-medium tracking-wide text-center flex items-center">
+                  <h1 className="text-[#DFD0B8] font-medium text-[40px] tracking-wide text-center flex items-center">
                     Become Seller <IoIosArrowForward className="ml-1" />
                   </h1>
                 </Link>
