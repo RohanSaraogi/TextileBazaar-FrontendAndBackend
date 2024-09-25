@@ -305,14 +305,18 @@ const Header = ({ activeHeading }) => {
           </div>
         </div>
       </div>
+
+      {/* ------------------------------------------------------ */}
       {/* mobile header */}
+       {/* ------------------------------------------------------ */}
+
       <div
         className={`${
           active === true ? "shadow-sm fixed top-0 left-0 z-10 " : null
         }
       w-full h-[60px]  z-50 top-0 left-0 shadow-sm 1000px:hidden bg-gradient-to-r from-[#153448] from-90% to-[#3C5B6F] to-95%`}
       >
-        <div className="w-full flex items-center justify-between">
+        <div className="w-full h-[100vh] flex items-center justify-around">
           <div className="text-[#DFD0B8]">
             <BiMenuAltLeft
               size={40}
@@ -365,7 +369,7 @@ const Header = ({ activeHeading }) => {
                     </span> */}
                     {/* <p className="mt-5 ml-3 font-bold">Textile Bazzar</p>
                      */}
-                     <div className="flex flex-row justify-end items-center gap-5">
+                     <div className="flex flex-row justify-end items-center gap-[60px]">
                       
                       <div className="ml-5 mt-3">
                         <Link to="/">

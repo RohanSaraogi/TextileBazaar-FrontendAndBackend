@@ -31,9 +31,9 @@ const ProfileSidebar = ({ setActive, active }) => {
       });
   };
   return (
-    <div className="w-full bg-gradient-to-r from-[#153448] to-[#3C5B6F] shadow-sm rounded-[10px] px-8 pt-8 pb-4 text-[#c8cfd8] tracking-wide font-Poppins">
+    <div className="w-full bg-gradient-to-r from-[#153448] to-[#3C5B6F] shadow-sm rounded-full md:rounded-[10px] px-2 md:px-8 pt-8 pb-4 text-[#c8cfd8] tracking-wide font-Poppins">
       <div
-        className={`${active === 1 ? "border-2 border-solid rounded-full border-[#DFD0B8] px-2 p-1 scale-110" : ""} flex items-center cursor-pointer w-full mb-8 hover:scale-110`}
+        className={`${active === 1 ? "w-[100%] border-2 border-solid rounded-full border-[#DFD0B8]  scale-110 px-2 py-1" : ""} px-2 py-1 flex items-center cursor-pointer w-full mb-8 hover:scale-110`}
         onClick={() => setActive(1)}
       >
         <RxPerson size={20} color={active === 1 ? "#DFD0B8" : ""} />
@@ -101,7 +101,7 @@ const ProfileSidebar = ({ setActive, active }) => {
       </div> */}
 
       <div
-        className={`${active === 6 ? "border-2 border-solid rounded-full border-[#DFD0B8] px-2 p-1 scale-110" : ""} flex items-center cursor-pointer w-full mb-8 hover:scale-110`}
+        className={`${active === 6 ? "w-[100%] border-2 border-solid items-center rounded-full border-[#DFD0B8] px-2 py-1 scale-110" : ""} px-2 py-1 flex items-center cursor-pointer w-full mb-8 hover:scale-110`}
         onClick={() => setActive(6)}
       >
         <RiLockPasswordLine size={20} color={active === 6 ? "#DFD0B8" : ""} />
@@ -131,7 +131,7 @@ const ProfileSidebar = ({ setActive, active }) => {
       {user && user?.role === "Admin" && (
         <Link to="/admin/dashboard">
           <div
-            className={`${active === 8 ? "border-2 border-solid rounded-full border-[#DFD0B8] px-2 p-1 scale-110" : ""} flex items-center cursor-pointer w-full mb-8 hover:scale-105`}
+            className={`${active === 8 ? "w-[100%] border-2 border-solid rounded-full border-[#DFD0B8] px-2 py-1 scale-110" : ""} px-2 py-1 flex items-center cursor-pointer w-full mb-8 hover:scale-110`}
             onClick={() => setActive(8)}
           >
             <MdOutlineAdminPanelSettings
