@@ -7,7 +7,6 @@ import { server } from "../../server";
 import { toast } from "react-toastify";
 import Header from "../Layout/Header";
 import Footer from "../Layout/Footer";
-import { loginAnimations } from "../../static/data.js";
 import Lottie from "react-lottie";
 import login_animation from "../../Assests/animations/login.json"
 const Login = () => {
@@ -50,7 +49,7 @@ const Login = () => {
   return (
     <>
       <Header />
-      <div className="flex flex-col md:flex-row h-[90vh] items-center md:justify-around">
+      <div className="flex flex-col md:flex-row  items-center md:justify-around">
         {/*  animation */}
         <div className="md:w-[40%] md:h-[75vh] md:mx-5 mt-2 md:mt-0 px-1 md:bg-gradient-to-r from-[#153448] to-[#3C5B6F] flex flex-col justify-center rounded-lg">
           {/* {loginAnimations &&

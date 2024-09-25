@@ -152,8 +152,8 @@ function ProductCard({ product }) {
   const price3 = product.price3.includes(":") && product.price3.split(":")[0];
   const price4 = product.price4.includes(":") && product.price4.split(":")[0];
   return (
-    <div className="md:w-1/3 max-lg:w-1/2 p-2 max-md:w-full ">
-      <div className="flex flex-col h-full w-full p-2 bg-white shadow-lg  rounded-2xl">
+    <div className="w-full 1000px:w-1/3 max-lg:w-1/2 p-2 max-md:w-full ">
+      <div className="flex flex-col h-full w-[100%] p-2 bg-white shadow-lg  rounded-2xl">
         <div className="flex flex-row md:flex-row items-center">
 
           {/* Image */}
@@ -230,7 +230,7 @@ const Categories = () => {
     const handleResize = () => {
       const windowWidth = window.innerWidth;
       if (windowWidth >= 768 && windowWidth < 1024) {
-        setProductsPerView(2);
+        setProductsPerView(1);
       } else if (windowWidth >= 1024) {
         setProductsPerView(3);
       } else {

@@ -7,7 +7,7 @@ import {
   AiOutlineSearch,
   AiOutlineShoppingCart,
 } from "react-icons/ai";
-import logo from "../../Assests/images/logo.png";
+import logo from "../../Assests/images/Logo_TB.png";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { CgProfile } from "react-icons/cg";
@@ -76,19 +76,19 @@ const Header = ({ activeHeading }) => {
       <div
         className={`${
           active === true ? "shadow-sm fixed top-0 left-0 z-10" : null
-        } transition hidden 1000px:flex items-center justify-between w-full bg-gradient-to-r from-[#153448] from-30% to-[#3C5B6F] to-55% h-[70px] shadow-lg`}
+        } transition hidden 1000px:flex items-center justify-between w-full bg-gradient-to-r from-[#153448] from-30% to-[#3C5B6F] to-55% h-[70px] shadow-lg `}
       >
         <div
           className={`${styles.section} relative ${styles.noramlFlex} justify-around`}
         >
           {/* Logo Image */}
-          <div>
+          <div className="">
             <Link to="/">
               {/* <img
                   src="https://shopo.quomodothemes.website/assets/images/logo.svg"
                   alt=""
                 /> */}
-              <img src={logo} alt="" className="w-[220px]" />
+              <img src={logo} alt="" className="w-[250px]" />
             </Link>
           </div>
 

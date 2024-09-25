@@ -217,7 +217,7 @@ const GstVerification = ({ server }) => {
     <div className='mt-1 800px:w-[70%]'>
       {verificationData.length > 0 && verificationData[0].verified && (
         <div>
-          <p className='font-[400] text-2xl mb-10 tracking-wider text-[#3C5B6F]'>Great <span className='font-bold text-green-600'>{seller.name}</span>, you have done a fantastic work by doing GST verification, which help you for your growth. <br></br>Good luck and Best wishes! </p>
+          <p className='font-[400] text-2xl mb-10 tracking-wider text-[#3C5B6F]'>Great <span className='font-bold text-[#3C5B6F]'>{seller.name}</span>, you have done a fantastic work by doing GST verification, which help you for your growth. <br></br>Good luck and Best wishes! </p>
         <div className='flex font-[700] text-[#3C5B6F] text-3xl justify-center items-center '>GST Verified ✅</div>
         </div>
       )}

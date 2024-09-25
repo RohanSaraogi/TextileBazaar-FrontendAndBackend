@@ -271,7 +271,7 @@ const Testimonials = () => {
       }, []);
       // max-w-5xl
   return (
-    <section className="flex flex-col mt-10 justify-center overflow-hidden mx-auto bg-gradient-to-r from-[#153448] from-90% to-[#3C5B6F] to-95% w-[100vw]">
+    <section className="flex flex-col mt-10 justify-center overflow-hidden mx-auto bg-gradient-to-r from-[#153448] from-90% to-[#3C5B6F] to-95% max-w-[100vw]">
       <div className="text-center mb-8 mt-4">
         <h2 className="capitalize font-bold text-2xl md:text-[35px] text-[#DFD0B8] mb-2 mt-4">Client Testimonials</h2>
         <p className="text-[#948979] md:text-[20px]">What members are saying.</p>
