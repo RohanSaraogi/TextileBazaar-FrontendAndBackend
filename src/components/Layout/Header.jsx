@@ -413,7 +413,7 @@ const Header = ({ activeHeading }) => {
               <Navbar active={activeHeading} />
               <div className={`${styles.button} mx-auto rounded-2xl bg-[#3C5B6F] items-center`}>
                 <Link to="/shop-create">
-                  <h1 className="text-[#DFD0B8] font-medium text-[40px] tracking-wide text-center flex items-center">
+                  <h1 className="text-[#DFD0B8] font-medium  tracking-wide text-center flex items-center">
                     Become Seller <IoIosArrowForward className="ml-1" />
                   </h1>
                 </Link>
