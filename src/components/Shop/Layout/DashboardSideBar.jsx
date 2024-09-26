@@ -82,7 +82,7 @@ const DashboardSideBar = ({ active }) => {
   // };
    
   return (
-    <div className="sidebar w-full h-[100%] bg-[#3C5B6F] shadow-sm overflow-y-scroll sticky top-0 left-0 z-10 font-500 text-[50px] leading-[20px] text-center py-4">
+    <div className="sidebar w-full h-[100%] bg-gradient-to-r from-[#153448] to-[#3C5B6F] shadow-sm overflow-y-scroll sticky top-0 left-0 z-10 font-500 text-[50px] leading-[20px] text-center py-4">
       {/* <div className="w-full flex item-center justify-center">
           <img
             src={`${data.avatar?.url}`}

@@ -118,7 +118,7 @@ const DashboardHero = () => {
       });
   });
   return (
-    <div className="w-full mx-2 md:mx-8 my-1 md:pt-10 md:mb-1">
+    <div className="w-full mx-2 md:mx-8 mt-1 md:pt-10 md:mb-1">
       <h3 className="text-[32px] font-700 text-[#3C5B6F] font-Poppins pb-2">Overview</h3>
       <div className="w-full block 800px:flex items-center gap-4">
         {/* <div className="w-full mb-4 800px:w-[30%] min-h-[20vh] bg-white shadow rounded px-2 py-5">

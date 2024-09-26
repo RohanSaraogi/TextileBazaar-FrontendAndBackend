@@ -308,13 +308,13 @@ const AllDailyPrice = () => {
     };
 
     return (
-        <div className="w-full h-[90vh] md:p-[20px] mt-[10px] md:mt-[20px] ml-[20px] mr-[10px] bg-gradient-to-r from-[#153448] to-[#3C5B6F] overflow-x-scroll text-[#c8cfd8] rounded-[10px] font-Poppins">
+        <div className="w-full h-[90vh]  md:p-[20px] mt-[10px] md:mt-[20px] ml-[20px] mr-[10px]  overflow-x-scroll text-[#c8cfd8] rounded-[10px] font-Poppins mb-[10px] md:mb-0">
             {/* Form for adding or updating daily prices */}
             <form
                 onSubmit={handleFormSubmit}
-                className="mb-1 w-full flex flex-col md:flex-row px-5"
+                className="mb-1 w-full flex flex-col md:flex-row px-5 bg-gradient-to-r from-[#153448] to-[#3C5B6F] py-[10px]"
             >
-                <div className="flex md:flex-row flex-col md:gap-3">
+                <div className="flex md:flex-row flex-col gap-1 md:gap-3">
                     <div className="md:mb-4 mb-1 ml-1">
                         <label htmlFor="category" className="block font-semibold mb-1 text-center text-[18px] tracking-wide">Category:</label>
                         <select
@@ -332,7 +332,7 @@ const AllDailyPrice = () => {
                             ))}
                         </select>
                     </div>
-                    <div className="mb-4 w-[60%]">
+                    <div className="mb-4 md:w-[60%]">
                         <label htmlFor="name" className="block font-semibold mb-1 text-center text-[18px] tracking-wide">Name:</label>
                         <input
                             type="text"
@@ -340,7 +340,7 @@ const AllDailyPrice = () => {
                             value={formData.name}
                             onChange={handleInputChange}
                             required
-                            className="md:w-[200px] w-[100%] md:h-[40px] px-3 py-2 rounded-full text-[black] bg-[#c8cfd8] border-b-[0.5px] border-[#c8cfd8]"
+                            className="md:w-[150px] w-[100%] md:h-[40px] px-3 py-2 rounded-full text-[black] bg-[#c8cfd8] border-b-[0.5px] border-[#c8cfd8]"
                         />
                     </div>
                     <div className="mb-4 md:w-[60%]">
@@ -354,7 +354,7 @@ const AllDailyPrice = () => {
                             className="md:w-[150px] w-[100%] md:h-[40px] px-3 py-2 rounded-full text-[black] bg-[#c8cfd8] border-b-[0.5px] border-[#c8cfd8]"
                         />
                     </div>
-                    <div className="mb-4 w-[60%]">
+                    <div className="mb-4 md:w-[60%]">
                         <label htmlFor="price2" className="block font-semibold mb-1 text-center text-[18px] tracking-wide">Price 2:</label>
                         <input
                             type="text"
@@ -365,7 +365,7 @@ const AllDailyPrice = () => {
                             className="md:w-[150px] w-[100%] md:h-[40px] px-3 py-2 rounded-full text-[black] bg-[#c8cfd8] border-b-[0.5px] border-[#c8cfd8]"
                         />
                     </div>
-                    <div className="mb-4 w-[60%]">
+                    <div className="mb-4 md:w-[60%]">
                         <label htmlFor="price3" className="block font-semibold mb-1 text-center text-[18px] tracking-wide">Price 3:</label>
                         <input
                             type="text"
@@ -376,7 +376,7 @@ const AllDailyPrice = () => {
                             className="md:w-[150px] w-[100%] md:h-[40px] px-3 py-2 rounded-full text-[black] bg-[#c8cfd8] border-b-[0.5px] border-[#c8cfd8]"
                         />
                     </div>
-                    <div className="mb-4 w-[60%]">
+                    <div className="mb-4 md:w-[60%]">
                         <label htmlFor="price4" className="block font-semibold mb-1 text-center text-[18px] tracking-wide">Price 4:</label>
                         <input
                             type="text"
@@ -384,26 +384,29 @@ const AllDailyPrice = () => {
                             value={formData.price4}
                             onChange={handleInputChange}
                             required
-                            className="w-[150px] zw-[100%] md:h-[40px] px-3 py-2 rounded-full text-[black] bg-[#c8cfd8] border-b-[0.5px] border-[#c8cfd8]"
+                            className="md:w-[150px] w-[100%] md:h-[40px] px-3 py-2 rounded-full text-[black] bg-[#c8cfd8] border-b-[0.5px] border-[#c8cfd8]"
                         />
                     </div>
                 </div>
-                <div className="w-full flex justify-end">
-                <button type="submit" className={`${styles.button} !w-max !h-[45px] px-3 !rounded-[5px] mr-3 mb-3 text-white`}>
+                <div className="w-full flex justify-center">
+                <button type="submit" className="w-1/2 !h-[45px] px-3 !rounded-[5px] mr-3 mb-3 text-[#153448] bg-[#c8cfd8] 800px:text-white font-bold">
                     {formData.id ? 'Update' : 'Add'}
                 </button>
                 </div>
             </form>
 
             {/* DataGrid for displaying daily prices */}
-            <DataGrid
-                rows={rows}
-                columns={columns}
-                pageSize={5}
-                disableSelectionOnClick
-                autoHeight
-                onRowSelected={handleRowSelection}
-            />
+            <div className="text-[#c8cfd8]">
+                <DataGrid
+                    rows={rows}
+                    columns={columns}
+                    pageSize={5}
+                    disableSelectionOnClick
+                    autoHeight
+                    onRowSelected={handleRowSelection}
+                    className="text-[#c8cfd8]"
+                />
+            </div>
         </div>
     );
 };

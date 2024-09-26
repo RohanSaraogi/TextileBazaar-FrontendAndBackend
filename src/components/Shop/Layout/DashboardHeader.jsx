@@ -11,7 +11,7 @@ import styles from "../../../styles/styles";
 const DashboardHeader = () => {
   const { seller } = useSelector((state) => state.seller);
   return (
-    <div className="w-full h-[80px] bg-[#153448] text-[#DFD0B8] shadow sticky top-0 left-0 z-30 flex items-center justify-between px-4">
+    <div className="w-full h-[80px] bg-gradient-to-r from-[#153448] to-[#3C5B6F] text-[#DFD0B8] shadow sticky top-0 left-0 z-30 flex items-center justify-between px-4">
       {/* <div className={`${styles.section} relative ${styles.noramlFlex} justify-around`}> */}
       <div className="w-[20vw]">
         <Link to="/dashboard">
@@ -32,7 +32,7 @@ const DashboardHeader = () => {
               size={30}
               className="mx-5 cursor-pointer"
             /> */}
-            <button className="mx-5 cursor-pointer bg-teal-900 px-5 py-2 rounded-xl text-white">Home</button>
+            <button className="mx-5 cursor-pointer bg-[#DFD0B8] px-5 py-2 rounded-xl text-[#153448] font-bold hover:scale-105">Home</button>
           </Link>
           {/* <Link to="/dashboard-events" className="800px:block hidden">
             <MdOutlineLocalOffer
