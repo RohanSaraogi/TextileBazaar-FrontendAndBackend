@@ -369,14 +369,14 @@ const Header = ({ activeHeading }) => {
                     </span> */}
                     {/* <p className="mt-5 ml-3 font-bold">Textile Bazzar</p>
                      */}
-                     <div className="flex flex-row justify-end items-center gap-[60px]">
+                     <div className="flex flex-row justify-end items-center ">
                       
-                      <div className="ml-5 mt-3">
+                      <div className="ml-2 md:ml-5 md:mt-3">
                         <Link to="/">
                           <img
                             src={logo}
                             alt=""
-                            className="mt-3 w-[200px] cursor-pointer"
+                            className="mt-3 w-[220px] cursor-pointer"
                           />
                         </Link>
                       </div>
@@ -391,7 +391,7 @@ const Header = ({ activeHeading }) => {
                 
               </div>
 
-              <div className="my-8 w-[92%] m-auto h-[40px relative] text-[#DFD0B8]">
+              <div className="mt-[45px] mb-[30px] w-[92%] m-auto h-[60px] relative text-[#DFD0B8]">
                 <form onSubmit={handleSearchChange}>
                   <input
                     type="text"
@@ -399,21 +399,21 @@ const Header = ({ activeHeading }) => {
                     value={searchTerm}
                     // onChange={handleSearchChange}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="h-[40px] w-full px-2 bg-[#3C5B6F] text-[#DFD0B8] border-[#15423F] border-[2px] rounded-full"
+                    className="h-[50px] w-full px-2 bg-[#3C5B6F] text-[#DFD0B8] border-[#15423F] border-[2px] rounded-full"
                   />
                   <button type="submit">
                     <AiOutlineSearch
                       size={30}
-                      className="absolute right-4 text-[#DFD0B8] top-[90px] cursor-pointer"
+                      className="absolute right-4 text-[#DFD0B8] top-[10px] cursor-pointer"
                     />
                   </button>
                 </form>
               </div>
 
               <Navbar active={activeHeading} />
-              <div className={`${styles.button} mx-auto rounded-2xl bg-[#3C5B6F] items-center`}>
+              <div className={`${styles.button} mx-auto rounded-2xl bg-[#3C5B6F] items-center h-[60px] w-[200px]`}>
                 <Link to="/shop-create">
-                  <h1 className="text-[#DFD0B8] font-medium  tracking-wide text-center flex items-center">
+                  <h1 className="text-[white] font-bold text-[20px] tracking-widesr text-center  flex items-center">
                     Become Seller <IoIosArrowForward className="ml-1" />
                   </h1>
                 </Link>
@@ -427,7 +427,7 @@ const Header = ({ activeHeading }) => {
                       <img
                         src={`${user.avatar?.url}`}
                         alt=""
-                        className="w-[100px] h-[100px] rounded-full border-[3px] border-[#DFD0B8]"
+                        className="w-[200px] h-[200px] rounded-full border-[3px] border-[#DFD0B8]"
                       />
                     </Link>
                   </div>
@@ -435,13 +435,13 @@ const Header = ({ activeHeading }) => {
                   <>
                     <Link
                       to="/login"
-                      className="text-[18px] pr-[10px] text-[#DFD0B8]"
+                      className="text-[18px] font-bold tracking-wide pr-[10px] text-[#DFD0B8]"
                     >
                       Login /
                     </Link>
                     <Link
                       to="/sign-up"
-                      className="text-[18px] text-[#DFD0B8]"
+                      className="text-[18px] font-bold tracking-wide text-[#DFD0B8]"
                     >
                       Sign up
                     </Link>
