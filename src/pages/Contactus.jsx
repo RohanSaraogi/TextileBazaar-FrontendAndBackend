@@ -62,9 +62,9 @@ export function ContactSection14() {
             assistance, or suggestions for improvement, our team is eager to
             hear from you.
           </p> */}
-          <div className="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start">
+          <div className="flex flex-col md:flex-row  items-center md:justify-around">
 
-            <div className="w-full h-full bg-gradient-to-r from-[#153448] to-[#3C5B6F] rounded-xl flex flex-col justify-start tracking-wide md:w-[40vw]">
+            <div className=" bg-gradient-to-r from-[#153448] to-[#3C5B6F] rounded-xl flex flex-col justify-start tracking-wide ">
 
               <div className="ml-[20px] md:ml-[50px] mt-[50px]">
                 <div className="text-[#FFFFFF] font-medium text-[30px] font-poppins justify-start">
@@ -106,12 +106,12 @@ export function ContactSection14() {
                 <img src={insta} alt="" className="w-[40px] h-[40px] mr-[10px]"/>
                 <img src={discord} alt="" className="w-[40px] h-[40px] mr-[10px]"/>
                 <img src={twitter} alt="" className="w-[40px] h-[40px] mr-[60px]"/>
-                <div className="ml-[40px]">
-                  <Lottie options={defaultOptions} width={400} height={300} />
+                <div className="ml-[-100px]">
+                  <Lottie options={defaultOptions} width={300} height={300} />
                 </div>
               </div>
             </div>
-
+            <div className="">
             <form
               action="#"
               onSubmit={handleSubmit}
@@ -206,6 +206,7 @@ export function ContactSection14() {
                 Send message
               </button>
             </form>
+            </div>
           </div>
         </div>
       </section>

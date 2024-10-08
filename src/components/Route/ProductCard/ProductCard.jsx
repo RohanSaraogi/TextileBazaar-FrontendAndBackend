@@ -80,15 +80,16 @@ const ProductCard = ({ data,isEvent }) => {
 // bg-[#DFD0B8]/30
   return (
     <>
-      <div className="w-full bg-white rounded-xl shadow-lg p-3 md:p-5 relative cursor-pointer transition-transform duration-300 transform lg:hover:scale-110 leading-7">
+      <div className="w-full bg-white rounded-xl shadow-lg  relative cursor-pointer transition-transform duration-300 transform lg:hover:scale-110 leading-7">
         
         <Link to={`${isEvent === true ? `/product/${data._id}?isEvent=true` : `/product/${data._id}`}`}>
           <img
             src={`${data.images && data.images[0]?.url}`}
             alt=""
-            className="w-full h-[170px] object-contain"
+            className="w-full h-[200px] object-fill rounded-t-xl"
           />
         </Link>
+        <div className="mx-3 md:mx-5">
         <Link to={`/shop/preview/${data?.shop._id}`}>
           <h5 className={`${styles.shop_name} text-[#1B1B28] tracking-wide`}>{data.shop.name}</h5>
         </Link>
@@ -115,6 +116,7 @@ const ProductCard = ({ data,isEvent }) => {
             </span>
           </div>
         </Link>
+        </div>
 
         {/* side options */}
         <div>
