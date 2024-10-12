@@ -7,7 +7,7 @@ import {
   AiOutlineSearch,
   AiOutlineShoppingCart,
 } from "react-icons/ai";
-import logo from "../../Assests/images/Logo_TB.png";
+import logo from "../../Assests/images/logo_new.png";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { CgProfile } from "react-icons/cg";
@@ -82,13 +82,13 @@ const Header = ({ activeHeading }) => {
           className={`${styles.section} relative ${styles.noramlFlex} justify-around`}
         >
           {/* Logo Image */}
-          <div className="">
+          <div className="md:mt-[30px]">
             <Link to="/">
               {/* <img
                   src="https://shopo.quomodothemes.website/assets/images/logo.svg"
                   alt=""
                 /> */}
-              <img src={logo} alt="" className="w-[250px]" />
+              <img src={logo} alt="" className="w-[350px]" />
             </Link>
           </div>
 
@@ -329,7 +329,7 @@ const Header = ({ activeHeading }) => {
               <img
                 src={logo}
                 alt=""
-                className="mt-3 w-[200px] cursor-pointer"
+                className="mt-3 w-[270px] cursor-pointer"
               />
             </Link>
           </div>

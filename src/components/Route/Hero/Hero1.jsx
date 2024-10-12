@@ -267,10 +267,10 @@ const Hero1 = () => {
           {heroContent.map((hero) => (
             <SplideSlide
               key={hero.id}
-              className="flex flex-col md:flex-row items-start md:items-center xlg:items-center justify-center md:justify-start md:px-8 md:py-10 rounded-xl h-[90vh] md:h-[85vh]"
+              className="flex flex-col md:flex-row items-start md:items-center xlg:items-center justify-center md:justify-start md:px-8 md:py-10 rounded-xl h-[90vh] md:h-[85vh] "
             >
               <div className="flex flex-col items-start ml-[30px] mr-[30px] md:ml-10 w-[100%] md:w-[65%] xlg:w-[90%]">
-                <p className="text-[#DFD0B8] mb-4 text-[11vw] md:text-[4vw] xlg:text-[4vw] leading-[6vh] md:leading-[10vh] xlg:leading-[14vh] font-1200 md:font-bold tracking-widest font-Poppins w-[90%] xlg:w-[80%]">
+                <p className="text-[#DFD0B8] mb-4 text-[11vw] md:text-[4vw] xlg:text-[4vw] leading-[6vh] md:leading-[10vh] xlg:leading-[14vh] font-1200 md:font-bold tracking-widest font-Baskerville w-[90%] xlg:w-[80%]">
                   {hero.title}
                 </p>
                 <div className="flex flex-col">
@@ -311,7 +311,7 @@ const Hero1 = () => {
                             ></path>
                           </svg>
                         </span>
-                        <p className="text-[10px] md:text-[20px] trackind-wide flex items-center justify-center w-full h-full text-[#3C5B6F] transition-all duration-300 transform group-hover:translate-x-full ease">
+                        <p className="text-[15px] md:text-[20px] trackind-wide flex items-center justify-center w-full h-full text-[#3C5B6F] transition-all duration-300 transform group-hover:translate-x-full ease">
                           View Plans
                         </p>
                       </div>
@@ -334,7 +334,7 @@ const Hero1 = () => {
                             ></path>
                           </svg>
                         </span>
-                        <p className="text-[10px] md:text-[20px] trackind-wide flex items-center justify-center w-full h-full text-[#DFD0B8] transition-all duration-300 transform group-hover:translate-x-full ease ">
+                        <p className="text-[15px] md:text-[20px] trackind-wide flex items-center justify-center w-full h-full text-[#DFD0B8] transition-all duration-300 transform group-hover:translate-x-full ease ">
                           Buy Yarns
                         </p>
                       </div>
