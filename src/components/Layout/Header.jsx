@@ -88,7 +88,7 @@ const Header = ({ activeHeading }) => {
                   src="https://shopo.quomodothemes.website/assets/images/logo.svg"
                   alt=""
                 /> */}
-              <img src={logo} alt="" className="w-[350px]" />
+              <img src={logo} alt="" className="w-[300px]" />
             </Link>
           </div>
 
