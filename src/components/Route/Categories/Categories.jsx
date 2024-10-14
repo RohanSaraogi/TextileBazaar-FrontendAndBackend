@@ -344,7 +344,7 @@ const Categories = () => {
     >
       <div className="flex flex-col w-full ">
         <header className="flex flex-wrap items-center justify-between max-sm:justify-center w-full md:mb-5 md:flex-nowrap">
-          <h1 className="mt-2 mb-3 text-3xl  max-sm:text-2xl font-bold text-[#153448] md:mb-0 md:text-4xl">
+          <h1 className="mt-2 mb-3 text-3xl  max-sm:text-2xl font-bold text-[#153448] md:mb-0 md:text-4xl font-Baskerville">
             Live rate of yarn
           </h1>
 

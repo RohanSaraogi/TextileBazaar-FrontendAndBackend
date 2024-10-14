@@ -29,7 +29,7 @@ const CategoriesMenu = () => {
         className={`${styles.section} rounded-lg mb-12 mt-12`}
         id="categories"
       >
-        <div className={`${styles.heading} mb-3 text-3xl flex justify-center items-center font-bold text-[#153448] md:mb-0 md:text-4xl`}>
+        <div className={`${styles.heading} mb-3 text-3xl flex justify-center items-center font-bold text-[#153448] md:mb-0 md:text-4xl font-Baskerville`}>
           <h1>Categories</h1>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-6 py-6">

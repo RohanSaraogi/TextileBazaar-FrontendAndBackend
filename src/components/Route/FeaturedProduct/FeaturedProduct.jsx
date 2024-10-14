@@ -19,7 +19,7 @@ const FeaturedProduct = () => {
     <div className="bg-[#948979]/50">
       <div className={`${styles.section} mb-5 `}>
         <div className={`${styles.heading} mb-3text-5xl flex justify-center items-center font-bold text-[#00000] md:mb-0 md:text-5xl`}>
-          <h1 className="mt-10 md:font-sans">Explore Collections</h1>
+          <h1 className="mt-10 md:font-sans tracking-wider">Explore Collections</h1>
         </div>
         <div className="grid grid-cols-2 mt-5 gap-3 md:grid-cols-2 md:gap-[25px] lg:grid-cols-4 lg:gap-[25px] xl:grid-cols-5 xl:gap-[30px] mb-12 border-1">
         {

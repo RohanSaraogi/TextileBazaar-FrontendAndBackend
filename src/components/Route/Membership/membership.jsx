@@ -33,7 +33,7 @@ export default function MembershipSection() {
       <div className=" bg-[#3C5B6F] py-8">
         {/* Title*/}
         <div className="text-center mb-8 mt-4">
-          <h1 className="text-3xl md:text-5xl font-bold text-[#DFD0B8]">
+          <h1 className="text-3xl md:text-5xl font-bold text-[#DFD0B8] font-Baskerville">
             Select a Plan
           </h1>
         </div>
