@@ -220,7 +220,7 @@ const ProductDetails = ({ data }) => {
                   alt=""
                   className="lg:w-[80%] w-full h-[70%] md:h-[70%] rounded-xl"
                 />
-                <div className="md:w-[200px] md:h-[200px] w-[350px] h-[150px] flex my-3 ">
+                <div className="flex my-3 ">
                   {/* Images of the product */}
                   {data &&
                     data.images.map((i, index) => (
@@ -228,7 +228,7 @@ const ProductDetails = ({ data }) => {
                         <img
                           src={`${i?.url}`}
                           alt=""
-                          className="h-[150px] w-[150px] overflow-hidden mr-3 mt-3 border-2 p-0 rounded-xl"
+                          className="w-[30vw] h-[15vh] overflow-hidden mr-3 mt-3 border-2 p-0 rounded-xl"
                           onClick={() => setSelect(index)}
                         />
                       </div>
