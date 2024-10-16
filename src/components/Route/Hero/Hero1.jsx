@@ -279,7 +279,7 @@ const Hero1 = () => {
                           <span key={i} className={`star ${i < review.rating ? 'text-yellow-500' : 'text-gray-400'}`}>&#9733;</span>
                         ))}
                       </div> */}
-                  <p className="font-bold md:font-medium text-[4vw] tracking-widest md:text-[2vw] mt-1 text-[#948979] font-Poppins">
+                  <p className="font-bold md:font-1200 text-[4vw] tracking-widest md:text-[2.5vw] mt-1 text-[#948979] font-Zolina">
                     {hero.subtitle}
                   </p>
                   <p className="text-[3vw] tracking-widest md:text-[1.5vw] mt-[5px] md:mt-0 mb-[2vh] text-[#948979] font-Poppins font-bold md:font-600">

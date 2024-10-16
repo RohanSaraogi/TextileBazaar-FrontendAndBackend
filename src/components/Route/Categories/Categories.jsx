@@ -331,7 +331,7 @@ const Categories = () => {
   );
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div>Loading... Live Rate of yarn</div>;
   }
 
   if (error) {

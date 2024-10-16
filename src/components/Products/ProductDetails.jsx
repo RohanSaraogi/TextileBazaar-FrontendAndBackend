@@ -23,6 +23,7 @@ import styles from "../../styles/styles";
 import { toast } from "react-toastify";
 import Ratings from "./Ratings";
 import axios from "axios";
+import { handleBreakpoints } from "@mui/system";
 
 const ProductDetails = ({ data }) => {
   const { wishlist } = useSelector((state) => state.wishlist);
@@ -141,32 +142,32 @@ const ProductDetails = ({ data }) => {
 
   const averageRating = avg.toFixed(2);
 
-  //   const handleInquiryClick = async () => {
-  //     // Get the product and seller information (you can adjust as per your app structure)
-  //     const productId = data.name;
-  //     const sellerEmail = data.shop.email;
-  //     const userEmail = user.email
+    const handleInquiryClick = async () => {
+      // Get the product and seller information (you can adjust as per your app structure)
+      const productId = data.name;
+      const sellerEmail = data.shop.email;
+      const userEmail = user.email
 
-  //     // Create an inquiry object
-  //     const inquiryData = {
-  //         productId,
-  //         sellerEmail,
-  //         userEmail,
-  //         userMessage: 'I am interested in this product. Can you provide more details?',
-  //     };
+      // Create an inquiry object
+      const inquiryData = {
+          productId,
+          sellerEmail,
+          userEmail,
+          userMessage: 'I am interested in this product. Can you provide more details?',
+      };
 
-  //         // Send the inquiry to the server endpoint
-  //         const response = await axios.post(`${server}/mail/send-inquiry`, inquiryData);
+          // Send the inquiry to the server endpoint
+          const response = await axios.post(`${server}/mail/send-inquiry`, inquiryData);
 
-  //         if (response.status === 201) {
-  //             // Inquiry sent successfully
-  //             toast.success('Inquiry sent successfully!');
-  //         } else {
-  //             // Failed to send inquiry
-  //             toast.error('Failed to send inquiry. Please try again.');
-  //         }
+          if (response.status === 201) {
+              // Inquiry sent successfully
+              toast.success('Inquiry sent successfully!');
+          } else {
+              // Failed to send inquiry
+              toast.error('Failed to send inquiry. Please try again.');
+          }
 
-  // };
+  };
 
   //   const handleMessageSubmit = async () => {
   //     if (isAuthenticated) {
@@ -218,17 +219,17 @@ const ProductDetails = ({ data }) => {
                 <img
                   src={`${data && data.images[select]?.url}`}
                   alt=""
-                  className="lg:w-[80%] w-full h-[70%] md:h-[70%] rounded-xl"
+                  className="lg:w-[80%] w-full h-[70%] md:h-[70%] rounded-xl border-2 p-0"
                 />
                 <div className="flex my-3 ">
                   {/* Images of the product */}
                   {data &&
                     data.images.map((i, index) => (
-                      <div className="cursor-pointer mr-1 w-[200px]">
+                      <div className="cursor-pointer mr-1 w-[130px]">
                         <img
                           src={`${i?.url}`}
                           alt=""
-                          className="w-[30vw] h-[15vh] overflow-hidden mr-3 mt-3 border-2 p-0 rounded-xl"
+                          className="w-[30vw] h-[20vh] overflow-hidden mr-3 md:mt-0 mt-3 mb-2 border-2 p-0 rounded-xl"
                           onClick={() => setSelect(index)}
                         />
                       </div>
@@ -346,7 +347,7 @@ const ProductDetails = ({ data }) => {
                     //     Send Inquiry <AiOutlineMessage className="ml-1" />
                     //   </span>
 
-                    <button class="flex items-center bg-[#153448] text-white gap-1 px-4 py-2 cursor-pointer text-gray-800 font-semibold tracking-widest rounded-2xl hover:border-2 hover:border-[#dfd0b8] transition-all duration-300 hover:gap-2 hover:translate-x-3 w-[250px]">
+                    <button className="flex items-center bg-[#153448] text-white gap-1 px-4 py-2 cursor-pointer text-gray-800 font-semibold tracking-widest rounded-2xl hover:border-2 hover:border-[#dfd0b8] transition-all duration-300 hover:gap-2 hover:translate-x-3 w-[250px]" onClick={handleInquiryClick}>
                       Send Enquiry to the Seller
                       <svg
                         class="w-5 h-5"
@@ -412,12 +413,12 @@ const ProductDetailsInfo = ({
   // }
 
   return (
-    <div className="bg-[#DFD0B8]/20 px-3 800px:px-10 py-2 rounded-[50px]">
+    <div className="bg-[#DFD0B8]/20 px-3 800px:px-10 py-2 rounded-[10px]">
       <div className="w-full flex justify-between border-b pt-10 pb-2">
         <div className="relative">
           <h5
             className={
-              "text-[#000] text-[18px] px-1 leading-5 font-[600] cursor-pointer 800px:text-[20px]"
+              "text-[#000] text-[18px] px-1 leading-5 font-[600] font-Zolina tracking-widest cursor-pointer 800px:text-[20px]"
             }
             onClick={() => setActive(1)}
           >
@@ -443,7 +444,7 @@ const ProductDetailsInfo = ({
         <div className="relative">
           <h5
             className={
-              "text-[#000] text-[18px] px-1 leading-5 font-[600] cursor-pointer 800px:text-[20px]"
+              "text-[#000] text-[18px] px-1 leading-5 font-[600] font-Zolina tracking-widest cursor-pointer 800px:text-[20px]"
             }
             onClick={() => setActive(3)}
           >
@@ -456,7 +457,7 @@ const ProductDetailsInfo = ({
       </div>
       {active === 1 ? (
         <>
-          <p className="py-2 text-[18px] leading-8 pb-10 whitespace-pre-line">
+          <p className="py-2 text-[18px] font-Poppins leading-8 pb-10 whitespace-pre-line">
             {data.description}
           </p>
         </>
@@ -509,11 +510,11 @@ const ProductDetailsInfo = ({
                   </div>
                 </div>
               </Link>
-              <p className="pt-2">{data.shop.description}</p>
+              <p className="pt-2 font-Zolina">{data.shop.description}</p>
             </div>
             <div className="w-full 800px:w-[50%] mt-5 800px:mt-0 800px:flex flex-col items-end border-l-2 pl-5">
               <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-                <table class="w-full text-sm text-left rtl:text-right">
+                <table class="w-full text-sm text-left rtl:text-right font-Poppins tracking-widest">
                   <tbody>
                     <tr class="bg-[#DFD0B8]/1 border-b">
                       <th
@@ -607,7 +608,7 @@ const ProductDetailsInfo = ({
                 </table>
               <div className="px-2 pb-2">
                   <Link to={`/shop/preview/${data.shop._id}`}>
-                    <div className="w-full h-[40px] bg-[#153448] text-[#DFD0B8] rounded-md flex items-center justify-center mt-5 p-2">
+                    <div className="w-[95%] h-[40px] bg-[#153448] text-[#DFD0B8] rounded-md flex items-center justify-center mt-5 p-2 hover:scale-105 mx-auto">
                       <h4 className="text-white">Visit Shop</h4>
                     </div>
                   </Link>

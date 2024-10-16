@@ -7,6 +7,7 @@ module.exports = {
       Roboto: ["Roboto", "sans-serif"],
       Poppins: ['Poppins', "sans-serif"],
       Baskerville: ['Baskervville SC', "serif"],
+      Zolina: ['Zolina Light', "mono"],
     },
     extend: {
       screens: {
