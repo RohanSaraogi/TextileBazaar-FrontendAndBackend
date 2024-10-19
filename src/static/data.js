@@ -6,7 +6,6 @@ import machinery from "../Assests/images/categories/machinery.png";
 import finishedgoods from "../Assests/images/categories/goods.png";
 import dyes from "../Assests/images/categories/dyes.png";
 
-import chemicals from "../Assests/animations/chemicals.gif";
 import user_login from "../Assests/animations/User_login.gif";
 // Function that returns the navItems array
 export const useNavItems = () => {
@@ -580,58 +579,70 @@ export const productData = [
 
 export const footerProductLinks = [
   {
-    name: "About us",
-    link: "/about",
+    name: "Home",
+    link: "/",
   },
   {
-    name: "Careers",
-    link: "/carrers",
+    name: "Products",
+    link: "/products",
   },
   {
-    name: "Store Locations",
+    name: "Sell Yarn",
+    link: "/shop-login",
   },
   {
-    name: "Our Blog",
+    name: "Live Yarn Price",
+    link: "/",
   },
   {
-    name: "Reviews",
+    name: "Plans",
+    link: "/",
   },
 ];
 
 export const footercompanyLinks = [
   {
-    name: "Game & Video",
+    name: "Yarn",
+    link: "/products?category=Yarn",
   },
   {
-    name: "Phone &Tablets",
+    name: "Fabrics",
+    link: "/products?category=Fabric-cotton",
   },
   {
-    name: "Computers & Laptop",
+    name: "Finished Products",
+    link: "/products?category=Finished%20goods",
   },
   {
-    name: "Sport Watches",
+    name: "Machinery",
+    link: "/products?category=Machinery",
   },
   {
-    name: "Events",
+    name: "Dyes and Chemicals",
+    link: "/products?category=Dyes%20and%20Chemicals",
   },
+  
 ];
 
 export const footerSupportLinks = [
   {
     name: "FAQ",
-  },
-  {
-    name: "Reviews",
+    link: "/",
   },
   {
     name: "Contact Us",
+    link: "/contactus",
   },
   {
-    name: "Shipping",
-  },
-  {
-    name: "Live chat",
-  },
+    name: "Client Testimonials",
+    link: "/",
+  }
+  // {
+  //   name: "Shipping",
+  // },
+  // {
+  //   name: "Live chat",
+  // },
 ];
 
 export const loginAnimations = [{ animation_url: user_login }];

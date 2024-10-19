@@ -7,7 +7,7 @@ import {
   AiOutlineSearch,
   AiOutlineShoppingCart,
 } from "react-icons/ai";
-import logo from "../../Assests/images/logo_new.png";
+import logo from "../../Assests/images/TEXTILE-gold.png";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { CgProfile } from "react-icons/cg";
@@ -88,7 +88,7 @@ const Header = ({ activeHeading }) => {
                   src="https://shopo.quomodothemes.website/assets/images/logo.svg"
                   alt=""
                 /> */}
-              <img src={logo} alt="" className="w-[250px]" />
+              <img src={logo} alt="" className="w-[20vw]" />
             </Link>
           </div>
 
@@ -316,8 +316,8 @@ const Header = ({ activeHeading }) => {
         }
       w-full h-[60px]  z-50 top-0 left-0 shadow-sm 1000px:hidden bg-gradient-to-r from-[#153448] from-90% to-[#3C5B6F] to-95%`}
       >
-        <div className="w-full flex items-center justify-between">
-          <div className="text-[#DFD0B8]">
+        <div className="w-full flex items-end ">
+          <div className="text-[#DFD0B8] ">
             <BiMenuAltLeft
               size={40}
               className="ml-4"
@@ -329,7 +329,7 @@ const Header = ({ activeHeading }) => {
               <img
                 src={logo}
                 alt=""
-                className="mt-3 w-[270px] cursor-pointer"
+                className="mt-3 w-[70vw] cursor-pointer ml-[3vw]"
               />
             </Link>
           </div>
@@ -369,7 +369,7 @@ const Header = ({ activeHeading }) => {
                     </span> */}
                     {/* <p className="mt-5 ml-3 font-bold">Textile Bazzar</p>
                      */}
-                     <div className="flex flex-row justify-end items-center ">
+                     <div className="ml-1 flex flex-row justify-end items-center ">
                       
                       <div className="ml-2 md:ml-5 md:mt-3">
                         <Link to="/">
@@ -382,7 +382,7 @@ const Header = ({ activeHeading }) => {
                       </div>
                       <RxCross1
                         size={20}
-                        className="ml-4 mt-5 text-[#DFD0B8] cursor-pointer"
+                        className="ml-4 mt-3 text-[#DFD0B8] cursor-pointer"
                         onClick={() => setOpen(false)}
                       />
                     </div>

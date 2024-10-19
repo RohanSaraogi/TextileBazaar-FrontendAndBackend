@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { server } from "../server";
 import { toast } from "react-toastify";
 import axios from "axios";
-import contactus from "../Assests/images/contact.jpg";
+// import contactus from "../Assests/images/contact.jpg";
 import Header from "../components/Layout/Header";
 import Footer from "../components/Layout/Footer";
 import phone from "../Assests/images/phone.png";
@@ -11,7 +11,6 @@ import location from "../Assests/images/location.png";
 import insta from "../Assests/images/insta.png";
 import twitter from "../Assests/images/twitter.png";
 import discord from "../Assests/images/discord.png";
-import bgDesign from "../Assests/images/bg_contactUs.png"
 import Lottie from "react-lottie";
 import contact_us from "../Assests/animations/contactUs1.json"
 export function ContactSection14() {

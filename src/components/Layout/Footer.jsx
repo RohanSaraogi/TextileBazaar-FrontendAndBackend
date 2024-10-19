@@ -11,7 +11,7 @@ import {
   footerProductLinks,
   footerSupportLinks,
 } from "../../static/data";
-import logo from "../../Assests/images/logo.png"
+import logo from "../../Assests/images/Logo_TB.png"
 
 const Footer = () => {
   return (
@@ -40,10 +40,10 @@ const Footer = () => {
           <img
             src={logo}
             alt=""
-            
+            className="w-[350px]"
           />
           <br />
-          <p className="text-[#153448]">The home and elements needeed to create beatiful products.</p>
+          <p className="text-[#153448]">Join the Textile Bazzar Revolution, Turn your Deadtock into profits.</p>
           <div className="flex items-center mt-[15px] text-[#153448]">
             <AiFillFacebook size={25} className="cursor-pointer" />
             <AiOutlineTwitter
@@ -111,13 +111,13 @@ const Footer = () => {
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
          text-center pt-2 text-[#153448] text-sm pb-8"
       >
-        <span>© 2020 Becodemy. All rights reserved.</span>
+        <span>© 2024 DevanTech. All rights reserved.</span>
         <span>Terms · Privacy Policy</span>
         <div className="sm:block flex items-center justify-center w-full">
-          <img
+          {/* <img
             src="https://hamart-shop.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffooter-payment.a37c49ac.png&w=640&q=75"
             alt=""
-          />
+          /> */}
         </div>
       </div>
     </div>
