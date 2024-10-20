@@ -65,6 +65,7 @@ import { fetchDailyPrices } from "../../../redux/actions/dailyprice";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import styles from "../../../styles/styles";
+import yarnImg from "../../../Assests/images/live_yarn.png";
 
 //border-2 border-solid border-teal-900
 // function ProductCard({ product }) {
@@ -250,23 +251,23 @@ const Categories = () => {
   const images = [
     {
       image:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/d937fa77b0b18424369da6c307cf90ab1a8541719010c2dbca46f6b7afc9af4b?apiKey=32f77bb18c504c65be17d8ce7468b501&",
+        `${yarnImg}`,
     },
     {
       image:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/110115f8598cb4fe45d5e76b95c27b24a423d4ec4d465dacc49767a121083f04?apiKey=32f77bb18c504c65be17d8ce7468b501&",
+        `${yarnImg}`,
     },
     {
       image:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/110115f8598cb4fe45d5e76b95c27b24a423d4ec4d465dacc49767a121083f04?apiKey=32f77bb18c504c65be17d8ce7468b501&",
+        `${yarnImg}`,
     },
     {
       image:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/d937fa77b0b18424369da6c307cf90ab1a8541719010c2dbca46f6b7afc9af4b?apiKey=32f77bb18c504c65be17d8ce7468b501&",
+        `${yarnImg}`,
     },
     {
       image:
-        "https://cdn.builder.io/api/v1/image/assets/TEMP/110115f8598cb4fe45d5e76b95c27b24a423d4ec4d465dacc49767a121083f04?apiKey=32f77bb18c504c65be17d8ce7468b501&",
+        `${yarnImg}`,
     },
   ];
 
