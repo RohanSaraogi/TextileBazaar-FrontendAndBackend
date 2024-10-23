@@ -1,7 +1,6 @@
 import React from "react";
 import Lottie from "react-lottie";
 import animationData from "../../Assests/animations/loading.json";
-// import groovyWalkAnimation from "./groovyWalk.json";
 
 const Loader = () => {
   const defaultOptions = {
