@@ -8,7 +8,7 @@ import { getAllProductsShop } from "../../../redux/actions/product";
 
 import { AiOutlineFolderAdd, AiOutlineGift } from "react-icons/ai";
 import { FiPackage, FiShoppingBag } from "react-icons/fi";
-import { RxDashboard } from "react-icons/rx";
+import { RxDashboard, RxHome } from "react-icons/rx";
 import { MdOutlineLocalOffer } from "react-icons/md";
 import { CiMoneyBill, CiSettings } from "react-icons/ci";
 import { VscNewFile } from "react-icons/vsc";
@@ -82,7 +82,7 @@ const DashboardSideBar = ({ active }) => {
   // };
    
   return (
-    <div className="sidebar w-full h-[100%] bg-gradient-to-r from-[#153448] to-[#3C5B6F] shadow-sm overflow-y-scroll sticky top-0 left-0 z-10 font-500 text-[50px] leading-[20px] text-center py-4">
+    <div className="sidebar w-full h-[100vh] bg-gradient-to-r from-[#153448] to-[#3C5B6F] shadow-sm overflow-y-scroll sticky top-0 left-0 z-10 font-500 text-[50px] leading-[20px] text-center py-4">
       {/* <div className="w-full flex item-center justify-center">
           <img
             src={`${data.avatar?.url}`}
@@ -278,6 +278,21 @@ const DashboardSideBar = ({ active }) => {
             }`}
           >
             Settings
+          </h5>
+        </Link>
+      </div>
+      <div className={`${active === 12 ? "bg-[#948979]" : "bg-[#DFD0B8]"}  800px:w-[90%] flex items-center p-4  rounded-[14px] mx-3 mb-2 hover:scale-105`}>
+        <Link to={`/shop/${seller._id}`} className="w-full flex items-center ">
+          <RxHome
+            size={30}
+            color={`${active === 12 ? "#DFD0B8" : "#153448"}`}
+          />
+          <h5
+            className={`hidden 800px:block pl-2 text-[18px] font-[400] ${
+              active === 12 ? "text-[#DFD0B8]" : "text-[#153448]"
+            }`}
+          >
+            Shop Page
           </h5>
         </Link>
       </div>

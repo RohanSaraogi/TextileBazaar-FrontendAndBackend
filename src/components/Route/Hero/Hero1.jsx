@@ -180,9 +180,9 @@ const Hero1 = () => {
                   </div>
                 </div>
               </div>
-              <div className="my-[30px] mx-auto md:mx-1 md:flex md:items-center p-0 rounded-full ">
+              <div className="my-[30px] max-w-[100%] mx-auto md:flex md:items-center justify-between p-1 bg-gradient-to-r from-[#3C5B6F] to-[#153448] rounded-full">
                 <img
-                  className="w-[200px] h-[200px] md:w-[450px] md:h-[450px] xlg:w-[600px] xlg:h-[600px] rounded-full object-fill"
+                  className="w-[250px] h-[250px] md:w-[450px] md:h-[450px] xlg:w-[600px] xlg:h-[600px] rounded-full object-fill mx-auto"
                   src={hero.image}
                   alt=""
                 />
