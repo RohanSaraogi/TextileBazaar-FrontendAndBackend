@@ -3,18 +3,18 @@ import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import { server,backend_url } from "../../../server";
 import { useDispatch, useSelector } from "react-redux";
-import Loader from "../../Layout/Loader";
-import { getAllProductsShop } from "../../../redux/actions/product";
+// import Loader from "../../Layout/Loader";
+// import { getAllProductsShop } from "../../../redux/actions/product";
 
 import { AiOutlineFolderAdd, AiOutlineGift } from "react-icons/ai";
 import { FiPackage, FiShoppingBag } from "react-icons/fi";
 import { RxDashboard, RxHome } from "react-icons/rx";
-import { MdOutlineLocalOffer } from "react-icons/md";
+// import { MdOutlineLocalOffer } from "react-icons/md";
 import { CiMoneyBill, CiSettings } from "react-icons/ci";
-import { VscNewFile } from "react-icons/vsc";
+// import { VscNewFile } from "react-icons/vsc";
 
-import { BiMessageSquareDetail } from "react-icons/bi";
-import { HiOutlineReceiptRefund } from "react-icons/hi";
+// import { BiMessageSquareDetail } from "react-icons/bi";
+// import { HiOutlineReceiptRefund } from "react-icons/hi";
 
 
 // import { useDispatch, useSelector } from "react-redux";

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { SpeedInsights } from "@vercel/speed-insights/react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {
@@ -374,7 +373,6 @@ const App = () => {
         pauseOnHover
         theme="dark"
       />
-      <SpeedInsights />
     </BrowserRouter>
   );
 };
