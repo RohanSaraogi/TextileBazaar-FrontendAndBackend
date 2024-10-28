@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {
@@ -47,7 +48,7 @@ import {
   AdminDashboardEvents,
   AdminDashboardWithdraw,
   AdminDashboardAdvertisment,
-  AdminDashboardGetAds
+  AdminDashboardGetAds,
 } from "./routes/AdminRoutes";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -66,9 +67,8 @@ import { loadStripe } from "@stripe/stripe-js";
 import AdminDashboardDailyPrices from "./pages/AdminDashboardDailyPrice.jsx";
 import SubscriptionForm from "./pages/SubscriptionForm.jsx";
 import AdminDashboardSubscribed from "./pages/AdminDashboardSubscribed.jsx";
-import {fetchAllSubscriptionDetails} from "../src/redux/actions/subscriptionActions.js"
+import { fetchAllSubscriptionDetails } from "../src/redux/actions/subscriptionActions.js";
 import ContactSection14 from "./pages/Contactus.jsx";
-
 
 const App = () => {
   const [stripeApikey, setStripeApiKey] = useState("");
@@ -88,7 +88,6 @@ const App = () => {
 
   return (
     <BrowserRouter>
-     
       {stripeApikey && (
         <Elements stripe={loadStripe(stripeApikey)}>
           <Routes>
@@ -314,7 +313,7 @@ const App = () => {
             </ProtectedAdminRoute>
           }
         />
-         <Route
+        <Route
           path="/admin-products"
           element={
             <ProtectedAdminRoute>
@@ -322,7 +321,7 @@ const App = () => {
             </ProtectedAdminRoute>
           }
         />
-         {/* <Route
+        {/* <Route
           path="/admin-events"
           element={
             <ProtectedAdminRoute>
@@ -330,7 +329,7 @@ const App = () => {
             </ProtectedAdminRoute>
           }
         /> */}
-         <Route
+        <Route
           path="/admin-dailyprice"
           element={
             <ProtectedAdminRoute>
@@ -338,7 +337,7 @@ const App = () => {
             </ProtectedAdminRoute>
           }
         />
-         <Route
+        <Route
           path="/admin-adsvertismentportal"
           element={
             <ProtectedAdminRoute>
@@ -346,7 +345,7 @@ const App = () => {
             </ProtectedAdminRoute>
           }
         />
-         <Route
+        <Route
           path="/admin-withdraw-request"
           element={
             <ProtectedAdminRoute>
@@ -354,7 +353,7 @@ const App = () => {
             </ProtectedAdminRoute>
           }
         />
-         <Route
+        <Route
           path="/subscribed-user"
           element={
             <ProtectedAdminRoute>
@@ -375,7 +374,7 @@ const App = () => {
         pauseOnHover
         theme="dark"
       />
-          
+      <SpeedInsights />
     </BrowserRouter>
   );
 };
