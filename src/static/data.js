@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import yarn from "../Assests/images/categories/yarn.webp";
 import fabric from "../Assests/images/categories/fabric.webp";
 import machinery from "../Assests/images/categories/machinery.webp";
-import finishedgoods from "../Assests/images/categories/goods.";
+import finishedgoods from "../Assests/images/categories/goods.webp";
 import dyes from "../Assests/images/categories/dyes.webp";
 
 // import user_login from "../Assests/animations/User_login.gif";
