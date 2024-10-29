@@ -195,7 +195,8 @@
 //   );
 // };
 // export default Hero1;
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../Assests/images/logo_plans.png";
 import bannerImg1 from "../../../Assests/images/Bannerimg/11.webp";
