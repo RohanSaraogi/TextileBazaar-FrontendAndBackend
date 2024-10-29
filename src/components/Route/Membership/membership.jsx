@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import axios from "axios";
 import { server } from "../../../server";
-import yarn from "../../../Assests/images/yarn_plans.png";
-import logo from "../../../Assests/images/logo_plans.png";
+import yarn from "../../../Assests/images/yarn_plans.webp";
+import logo from "../../../Assests/images/logo_plans.webp";
 export default function MembershipSection() {
   const [subscribe, setSubscribe] = useState([]);
   useEffect(() => {

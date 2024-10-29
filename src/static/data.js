@@ -1,10 +1,10 @@
 // navigation Data
 import { useSelector } from "react-redux";
-import yarn from "../Assests/images/categories/yarn.png";
-import fabric from "../Assests/images/categories/fabric.png";
-import machinery from "../Assests/images/categories/machinery.png";
-import finishedgoods from "../Assests/images/categories/goods.png";
-import dyes from "../Assests/images/categories/dyes.png";
+import yarn from "../Assests/images/categories/yarn.webp";
+import fabric from "../Assests/images/categories/fabric.webp";
+import machinery from "../Assests/images/categories/machinery.webp";
+import finishedgoods from "../Assests/images/categories/goods.";
+import dyes from "../Assests/images/categories/dyes.webp";
 
 // import user_login from "../Assests/animations/User_login.gif";
 // Function that returns the navItems array

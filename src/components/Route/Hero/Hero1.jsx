@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../Assests/images/logo_plans.png";
-import bannerImg1 from "../../../Assests/images/Bannerimg/11.png"
-import bannerImg2 from "../../../Assests/images/Bannerimg/22.png"
-import bannerImg3 from "../../../Assests/images/Bannerimg/33.png"
-import bannerImg4 from "../../../Assests/images/Bannerimg/44.png"
+import bannerImg1 from "../../../Assests/images/Bannerimg/11.webp"
+import bannerImg2 from "../../../Assests/images/Bannerimg/22.webp"
+import bannerImg3 from "../../../Assests/images/Bannerimg/33.webp"
+import bannerImg4 from "../../../Assests/images/Bannerimg/44.webp"
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 
