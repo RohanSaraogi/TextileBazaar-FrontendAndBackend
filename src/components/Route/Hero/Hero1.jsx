@@ -203,9 +203,10 @@ const Hero1 = () => {
 
         <div className="flex flex-col md:flex-row items-start md:items-center xlg:items-center justify-center md:justify-start md:px-8 md:py-10 rounded-xl h-[90vh] md:h-[85vh] ">
           <div className="flex flex-col items-start ml-[10px]  md:ml-10 max-w-[100%] md:w-[65%] xlg:w-[90%]">
-            <p className="text-[#DFD0B8] mb-4 text-[11vw] md:text-[4vw] xlg:text-[4vw] leading-[6vh] md:leading-[10vh] xlg:leading-[14vh] font-1200 md:font-bold tracking-widest font-Baskerville w-[90%] xlg:w-[80%]">
+            <p className="text-[#DFD0B8] mb-4 text-[11vw] md:text-[4vw] xlg:text-[4vw] leading-[6vh] md:leading-[10vh] xlg:leading-[14vh] font-1200 md:font-bold tracking-widest font-Baskerville w-[100%] xlg:w-[80%]">
               {heroContent[currentIndex].title}
             </p>
+              {/* <div className="border border-dashed border-[#A9A9AA] tracking-widest w-[80%] md:w-[80%]" /> */}
             <div className="flex flex-col">
               {/* <div className="flex space-x-1">
                         {Array(5).fill(0).map((_, i) => (
@@ -219,7 +220,8 @@ const Hero1 = () => {
                 {heroContent[currentIndex].subTitleUnder}
               </p>
             </div>
-            <div className="border border-dashed border-[#A9A9AA] tracking-widest mb-4 w-[80%] md:w-[100%]" />
+            <div className="border border-dashed border-[#A9A9AA] tracking-widest mb-4 w-[80%] md:w-[80%]" />
+
 
             <div className="flex flex-col 1300px:flex-row gap-2 md:gap-5 pt-[2vh] md:pt-0 md:mt-[2vh]">
               <div className="w-[80%] md:w-[100%] pb-[20px] md:pb-0 md:mb-[10px] md:mr-[50px]">

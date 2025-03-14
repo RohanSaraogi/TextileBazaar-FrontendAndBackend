@@ -204,42 +204,61 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 // import { reviews } from './reviewsData';
 import Quote from '../Assests/images/blockquotes.svg';
+// 1. ""
 
+// -  - 
+
+
+// 2. ""
+   
+//   - Vidhika yarn
+
+
+
+// 3. " 
+
+// 4. ""
+
+
+
+// 5. ""
+
+// 
 const Testimonials = () => {
     const testimonials = [
         {
             id: 1,
-            quote: 'I am extremely satisfied with the service provided by XYZ Company. Their professionalism and attention to detail were unmatched. I would highly recommend them to anyone looking for quality service.',
-            author: 'John Doe',
-            designation:'CEO of Apple',
+            quote: 'I discovered that subscribing to TextileBazzar transformed my ability to sell deadstock fabrics and yarns. With the subscription, I reached a larger audience and significantly boosted my sales.',
+            author: 'Manmohana Agarwal',
+            designation:'Opal Tex Fab',
             image:"https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         },
         {
             id: 2,
-            quote: 'The product exceeded my expectations. It\'s well-designed and works flawlessly. I would definitely buy from this company again.',
-            author: 'Jane Smith',
-            designation:'CEO of Apple',
+            quote: 'I found that a subscription to TextileBazzar was a game-changer for selling my deadstock. It connected me with more buyers, helping me move my inventory quickly and efficiently.',
+            author: 'Vinod Agarwal',
+            designation:'Vidhika Yarn',
             image:"https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         },
         {
             id: 3,
-            quote: 'Great customer support! They were very helpful and responsive to all my inquiries. I\'m happy with my purchase.',
-            author: 'David Johnson',
-            designation:'CEO of Apple',
+            quote: 'I realized that TextileBazzar was the ideal platform for showcasing my deadstock fabrics and yarns. By subscribing, I could highlight my products to a broader customer base, leading to impressive sales results.',
+            author: 'Vardhman Jain',
+            designation:'Shree Ram Filament',
             image:"https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         },
         {
             id: 4,
-            quote: 'Great customer support! They were very helpful and responsive to all my inquiries. I\'m happy with my purchase.',
-            author: 'asj Johnson',
-            designation:'CEO of Apple',
+            quote: 'I highly recommend a subscription to TextileBazzar, as it simplified my selling process for deadstock. The increased visibility allowed me to connect with more buyers and grow my business.',
+            author: 'Gaurav Agarwal',
+            designation:'Dealer of DRD machine',
             image:"https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         },
         {
             id: 5,
-            quote: 'Great customer support! They were very helpful and responsive to all my inquiries. I\'m happy with my purchase.',
-            author: 'sdasds Johnson',
-            designation:'CEO of Apple',
+            quote: 'I encourage others to invest in a subscription with TextileBazzar. It not only helped me sell my deadstock fabrics and yarns swiftly but also delivered outstanding results that exceeded my expectations.',
+            author: 'Parth patel',
+            designation:'AU filaments',
             image:"https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         },
         // Add more testimonials as needed
@@ -293,10 +312,10 @@ const Testimonials = () => {
           }}
         >
           {testimonials.map((review) => (
-            <SplideSlide key={review.id} className="flex flex-col items-center p-8 rounded-xl gap-4">
-              <img className="w-36 h-36 rounded-full object-cover mb-4 mx-auto" src={review.image} alt="" />
+            <SplideSlide key={review.id} className="flex flex-col items-center p-8  rounded-xl gap-4">
+              {/* <img className="w-36 h-36 rounded-full object-cover mb-4 mx-auto" src={review.image} alt="" /> */}
               <div className="text-center">
-                <p className="text-[#DFD0B8] mb-4 text-base md:text-lg">{review.quote}</p>
+                <p className="mx-auto md:w-[50%]  text-[#DFD0B8] mb-4 text-base md:text-lg">{review.quote}</p>
                 <div className="flex flex-col items-center">
                   {/* <div className="flex space-x-1">
                     {Array(5).fill(0).map((_, i) => (
