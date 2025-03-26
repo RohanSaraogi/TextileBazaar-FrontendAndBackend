@@ -26,11 +26,12 @@ const CategoriesMenu = () => {
       </div> */}
 
       <div
-        className={`${styles.section} rounded-lg mb-12 mt-12 animate-appear`}
-        style={{animationTimeline:"view()",animationRange: "entry 0% cover 40%"}}
+        className={`${styles.section} rounded-lg mb-12 mt-12`}
+        
         id="categories"
       >
-        <div className={`${styles.heading} mb-3 text-3xl flex justify-center items-center font-bold text-[#153448] md:mb-0 md:text-4xl font-Baskerville`}>
+        <div className={`${styles.heading} mb-3 text-3xl flex justify-center items-center font-bold text-[#153448] md:mb-0 md:text-4xl font-Baskerville animate-appear`}
+        style={{animationTimeline:"view()",animationRange: "entry 0% cover 40%"}}>
           <h1>Categories</h1>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-6 py-6">
@@ -42,7 +43,8 @@ const CategoriesMenu = () => {
               
               return (
                 <div
-                  className="bg-[#153448] shadow-lg hover:shadow-2xl cursor-pointer duration-500 rounded-lg p-5 md:p-5 flex flex-col justify-between items-center hover:scale-105 w-[100%]"
+                  className="bg-[#153448] shadow-lg hover:shadow-2xl cursor-pointer duration-500 rounded-lg p-5 md:p-5 flex flex-col justify-between items-center hover:scale-105 w-[100%] animate-appear"
+                  style={{animationTimeline:"view()",animationRange: "entry 0% cover 40%"}}
                   key={i.id}
                   onClick={() => handleSubmit(i)}
                 >

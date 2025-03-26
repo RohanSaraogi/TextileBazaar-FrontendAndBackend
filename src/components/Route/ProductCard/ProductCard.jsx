@@ -79,7 +79,8 @@ const ProductCard = ({ data, isEvent }) => {
   // bg-[#DFD0B8]/30
   return (
     <>
-      <div className="w-full bg-white rounded-xl shadow-lg  relative cursor-pointer transition-transform duration-300 transform lg:hover:scale-110 leading-7">
+      <div className="w-full bg-white rounded-xl shadow-lg  relative cursor-pointer transition-transform duration-300 transform lg:hover:scale-110 leading-7 animate-appear"
+      style={{animationTimeline:"view()",animationRange: "entry 0% cover 40%"}}>
         <Link
           to={`${
             isEvent === true
