@@ -21,7 +21,8 @@ const Faq = () => {
   };
 
   return (
-    <div className={`${styles.section} my-8`}>
+    <div className={`${styles.section} my-8 animate-appear`}
+    style={{animationTimeline:"view()",animationRange: "entry 0% cover 40%"}}>
       <h2 className="text-4xl font-bold text-gray-900 mb-8 text-left font-Baskerville">FAQs</h2>
       <div className="mx-auto space-y-4">
         {/* single Faq */}

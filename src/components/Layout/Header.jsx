@@ -76,10 +76,10 @@ const Header = ({ activeHeading }) => {
       <div
         className={`${
           active === true ? "shadow-sm fixed top-0 left-0 z-10" : null
-        } transition hidden 1000px:flex items-center justify-between w-full bg-gradient-to-r from-[#153448] from-30% to-[#3C5B6F] to-55% h-[70px] shadow-lg `}
+        }  transition hidden 1000px:flex items-center justify-between w-full bg-gradient-to-r from-[#153448] from-30% to-[#3C5B6F] to-55% h-[70px] shadow-lg `}
       >
         <div
-          className={`${styles.section} relative ${styles.noramlFlex} justify-around`}
+          className={`${styles.section} relative ${styles.noramlFlex} justify-around animate-appear`}
         >
           {/* Logo Image */}
           <div className="">

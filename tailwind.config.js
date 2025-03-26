@@ -28,17 +28,20 @@ module.exports = {
         'typing': "typing 2s steps(20) infinite alternate, blink .7s infinite",
         'fly-1': 'fly1 0.6s ease-in-out infinite alternate',
         'pulse-fast': 'pulse 0.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;',
-        'text-reveal': 'text-reveal 2.5s cubic-bezier(0.77, 0, 0.175, 1) infinite',
+        'text-reveal': 'text-reveal 2.5s cubic-bezier(0.77, 0, 0.175, 1)',
+        'appear': 'appear 1s ease-in-out forwards',
       },
       keyframes: {
         fly1: {
           '0%, 100%': { transform: 'translateY(0.1em)' },
           '50%': { transform: 'translateY(-0.1em)' },
         },
+
         'infinite-scroll': {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(-100%)' },
         },
+
         'typing': {
           "0%": {
             width: "0%",
@@ -64,7 +67,22 @@ module.exports = {
             transform: "translate(0, 0)",
           },
         },
-      },
+        "appear": {
+          "0%": {
+              opacity: 0,
+              // scale: 0.5,
+              // transform: "translateX(-100px)",
+              clipPath: "inset(100% 100% 0 0)",
+          },
+          "100%":{
+            opacity: 1,
+            // transform: "translateX(0px)",
+            clipPath: "inset(0 0 0 0)",
+
+          },
+
+        },
+      }
     },
   },
   plugins: [],

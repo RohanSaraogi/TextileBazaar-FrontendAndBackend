@@ -88,7 +88,6 @@
 
 // export default Testimonial;
 
-
 // import React, { useState } from 'react';
 // import banner from "../Assests/images/banner.jpeg"
 
@@ -198,137 +197,158 @@
 
 // export default Testimonial;
 
-
-import { useEffect } from 'react';
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/splide/dist/css/splide.min.css';
+import { useEffect } from "react";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/dist/css/splide.min.css";
 // import { reviews } from './reviewsData';
-import Quote from '../Assests/images/blockquotes.svg';
+import Quote from "../Assests/images/blockquotes.svg";
 // 1. ""
 
-// -  - 
-
+// -  -
 
 // 2. ""
-   
+
 //   - Vidhika yarn
 
-
-
-// 3. " 
+// 3. "
 
 // 4. ""
 
-
-
 // 5. ""
 
-// 
+//
 const Testimonials = () => {
-    const testimonials = [
-        {
-            id: 1,
-            quote: 'I discovered that subscribing to TextileBazzar transformed my ability to sell deadstock fabrics and yarns. With the subscription, I reached a larger audience and significantly boosted my sales.',
-            author: 'Manmohana Agarwal',
-            designation:'Opal Tex Fab',
-            image:"https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        },
-        {
-            id: 2,
-            quote: 'I found that a subscription to TextileBazzar was a game-changer for selling my deadstock. It connected me with more buyers, helping me move my inventory quickly and efficiently.',
-            author: 'Vinod Agarwal',
-            designation:'Vidhika Yarn',
-            image:"https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        },
-        {
-            id: 3,
-            quote: 'I realized that TextileBazzar was the ideal platform for showcasing my deadstock fabrics and yarns. By subscribing, I could highlight my products to a broader customer base, leading to impressive sales results.',
-            author: 'Vardhman Jain',
-            designation:'Shree Ram Filament',
-            image:"https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        },
-        {
-            id: 4,
-            quote: 'I highly recommend a subscription to TextileBazzar, as it simplified my selling process for deadstock. The increased visibility allowed me to connect with more buyers and grow my business.',
-            author: 'Gaurav Agarwal',
-            designation:'Dealer of DRD machine',
-            image:"https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        },
-        {
-            id: 5,
-            quote: 'I encourage others to invest in a subscription with TextileBazzar. It not only helped me sell my deadstock fabrics and yarns swiftly but also delivered outstanding results that exceeded my expectations.',
-            author: 'Parth patel',
-            designation:'AU filaments',
-            image:"https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        },
-        // Add more testimonials as needed
-    ];
+  const testimonials = [
+    {
+      id: 1,
+      quote:
+        "I discovered that subscribing to TextileBazzar transformed my ability to sell deadstock fabrics and yarns. With the subscription, I reached a larger audience and significantly boosted my sales.",
+      author: "Manmohana Agarwal",
+      designation: "Opal Tex Fab",
+      image:
+        "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    },
+    {
+      id: 2,
+      quote:
+        "I found that a subscription to TextileBazzar was a game-changer for selling my deadstock. It connected me with more buyers, helping me move my inventory quickly and efficiently.",
+      author: "Vinod Agarwal",
+      designation: "Vidhika Yarn",
+      image:
+        "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    },
+    {
+      id: 3,
+      quote:
+        "I realized that TextileBazzar was the ideal platform for showcasing my deadstock fabrics and yarns. By subscribing, I could highlight my products to a broader customer base, leading to impressive sales results.",
+      author: "Vardhman Jain",
+      designation: "Shree Ram Filament",
+      image:
+        "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    },
+    {
+      id: 4,
+      quote:
+        "I highly recommend a subscription to TextileBazzar, as it simplified my selling process for deadstock. The increased visibility allowed me to connect with more buyers and grow my business.",
+      author: "Gaurav Agarwal",
+      designation: "Dealer of DRD machine",
+      image:
+        "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    },
+    {
+      id: 5,
+      quote:
+        "I encourage others to invest in a subscription with TextileBazzar. It not only helped me sell my deadstock fabrics and yarns swiftly but also delivered outstanding results that exceeded my expectations.",
+      author: "Parth patel",
+      designation: "AU filaments",
+      image:
+        "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    },
+    // Add more testimonials as needed
+  ];
 
-
-    useEffect(() => {
-        const applyPaginationStyles = () => {
-      const paginationItems = document.querySelectorAll('.splide__pagination__page');
+  useEffect(() => {
+    const applyPaginationStyles = () => {
+      const paginationItems = document.querySelectorAll(
+        ".splide__pagination__page"
+      );
       paginationItems.forEach((item) => {
-        
-        item.style.backgroundColor = '#15423F'; // Tailwind's gray-400 color
-        
+        item.style.backgroundColor = "#15423F"; // Tailwind's gray-400 color
       });
-
-      
-    
     };
-    
-        // Initial style application and observing changes in active class
-        applyPaginationStyles();
-        const observer = new MutationObserver(applyPaginationStyles);
-        const pagination = document.querySelector('.splide__pagination');
-        if (pagination) {
-          observer.observe(pagination, { childList: true, subtree: true });
-        }
-    
-        return () => observer.disconnect();
-      }, []);
-      // max-w-5xl
+
+    // Initial style application and observing changes in active class
+    applyPaginationStyles();
+    const observer = new MutationObserver(applyPaginationStyles);
+    const pagination = document.querySelector(".splide__pagination");
+    if (pagination) {
+      observer.observe(pagination, { childList: true, subtree: true });
+    }
+
+    return () => observer.disconnect();
+  }, []);
+  // max-w-5xl
   return (
     <section className="flex flex-col mt-10 justify-center overflow-hidden mx-auto bg-gradient-to-r from-[#153448] from-90% to-[#3C5B6F] to-95% max-w-[100vw]">
-      <div className="text-center mb-8 mt-4">
-        <h2 className="capitalize font-bold text-2xl md:text-[35px] text-[#DFD0B8] mb-2 mt-4 font-Baskerville tracking-wider">Client Testimonials</h2>
-        <p className="text-[#948979] md:text-[20px] font-Baskerville">What members are saying.</p>
-      </div>
+      <div
+        className="animate-appear"
+        style={{
+          animationTimeline: "view()",
+          animationRange: "entry 0% cover 40%",
+        }}
+      >
+        <div className="text-center mb-8 mt-4">
+          <h2 className="capitalize font-bold text-2xl md:text-[35px] text-[#DFD0B8] mb-2 mt-4 font-Baskerville tracking-wider">
+            Client Testimonials
+          </h2>
+          <p className="text-[#948979] md:text-[20px] font-Baskerville">
+            What members are saying.
+          </p>
+        </div>
 
-      <div className="relative  p-4 user-select-none max-w-[100%] mx-auto">
-        {/* <blockquote className="absolute inset-0 flex justify-between items-center pointer-events-none">
+        <div className="relative  p-4 user-select-none max-w-[100%] mx-auto">
+          {/* <blockquote className="absolute inset-0 flex justify-between items-center pointer-events-none">
           <img className="w-8 h-8 opacity-25 absolute top-[-1rem] left-[-1rem] bg-black absolute inset-0"  src={Quote} alt="quote" />
           <img className="w-8 h-8 opacity-25 absolute bottom-[-3rem] right-[-0.5rem] transform rotate-180 bg-black" src={Quote} alt="quote" />
         </blockquote> */}
 
-        <Splide
-          options={{
-            perPage: 1,
-            autoplay: true,
-            speed: 1000,
-            rewind: true,
-            rewindByDrag: true,
-          }}
-        >
-          {testimonials.map((review) => (
-            <SplideSlide key={review.id} className="flex flex-col items-center p-8  rounded-xl gap-4">
-              {/* <img className="w-36 h-36 rounded-full object-cover mb-4 mx-auto" src={review.image} alt="" /> */}
-              <div className="text-center">
-                <p className="mx-auto md:w-[50%]  text-[#DFD0B8] mb-4 text-base md:text-lg">{review.quote}</p>
-                <div className="flex flex-col items-center">
-                  {/* <div className="flex space-x-1">
+          <Splide
+            options={{
+              perPage: 1,
+              autoplay: true,
+              speed: 1000,
+              rewind: true,
+              rewindByDrag: true,
+            }}
+          >
+            {testimonials.map((review) => (
+              <SplideSlide
+                key={review.id}
+                className="flex flex-col items-center p-8  rounded-xl gap-4"
+              >
+                {/* <img className="w-36 h-36 rounded-full object-cover mb-4 mx-auto" src={review.image} alt="" /> */}
+                <div className="text-center">
+                  <p className="mx-auto md:w-[50%]  text-[#DFD0B8] mb-4 text-base md:text-lg">
+                    {review.quote}
+                  </p>
+                  <div className="flex flex-col items-center">
+                    {/* <div className="flex space-x-1">
                     {Array(5).fill(0).map((_, i) => (
                       <span key={i} className={`star ${i < review.rating ? 'text-yellow-500' : 'text-gray-400'}`}>&#9733;</span>
                     ))}
                   </div> */}
-                  <p className="font-bold mt-2 text-[#948979] text-lg">{review.author}</p>
-                  <p className="font-bold  mb-2 text-[#948979] text-lg">{review.designation}</p>
+                    <p className="font-bold mt-2 text-[#948979] text-lg">
+                      {review.author}
+                    </p>
+                    <p className="font-bold  mb-2 text-[#948979] text-lg">
+                      {review.designation}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </SplideSlide>
-          ))}
-        </Splide>
+              </SplideSlide>
+            ))}
+          </Splide>
+        </div>
       </div>
     </section>
   );

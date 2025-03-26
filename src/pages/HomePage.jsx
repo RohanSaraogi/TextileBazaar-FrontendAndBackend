@@ -17,6 +17,7 @@ import Faq from "./FAQPage";
 
 const HomePage = () => {
   const { subscription } = useSelector((state) => state.subscription);
+  
   return (
     <div className='bg-white'>
       {/* bg-[#ECF7F1] */}

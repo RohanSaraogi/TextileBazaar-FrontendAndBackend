@@ -195,7 +195,7 @@ const Hero1 = () => {
             <p className="text-gray-600">What members are saying.</p>
           </div> */}
 
-      <div className="relative p-1 md:p-4 user-select-none max-w-[100%] md:mx-2">
+      <div className="animate-appear relative p-1 md:p-4 user-select-none max-w-[100%] md:mx-2">
         {/* <blockquote className="absolute inset-0 flex justify-between items-center pointer-events-none">
               <img className="w-8 h-8 opacity-25 absolute top-[-1rem] left-[-1rem] bg-black absolute inset-0"  src={Quote} alt="quote" />
               <img className="w-8 h-8 opacity-25 absolute bottom-[-3rem] right-[-0.5rem] transform rotate-180 bg-black" src={Quote} alt="quote" />

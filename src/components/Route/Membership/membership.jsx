@@ -31,8 +31,14 @@ export default function MembershipSection() {
   return (
     <>
       <div className=" bg-[#3C5B6F] py-8">
+        <div className="animate-appear"
+        style={{animationTimeline:"view()",animationRange: "entry 0% cover 40%"}}
+        >
+
+        
         {/* Title*/}
-        <div className="text-center mb-8 mt-4">
+        <div className="text-center mb-8 mt-4" 
+        >
           <h1 className="text-3xl md:text-5xl font-bold text-[#DFD0B8] font-Baskerville">
             Select a Plan
           </h1>
@@ -146,6 +152,7 @@ export default function MembershipSection() {
               </div>
             </div>
           ))}
+        </div>
         </div>
       </div>
       {/* </div> */}

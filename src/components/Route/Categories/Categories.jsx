@@ -341,7 +341,8 @@ const Categories = () => {
 
   return (
     <div
-      className={`${styles.section} flex  py-4 overflow-hidden max-md:px-1 `}
+      className={`${styles.section} animate-appear flex  py-4 overflow-hidden max-md:px-1 `}
+      style={{animationTimeline:"view()",animationRange: "entry 0% cover 40%"}}
     >
       <div className="flex flex-col w-full ">
         <header className="flex flex-wrap items-center justify-between max-sm:justify-center w-full md:mb-5 md:flex-nowrap">
