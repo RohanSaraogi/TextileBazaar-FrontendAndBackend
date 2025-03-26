@@ -71,13 +71,13 @@ module.exports = {
           "0%": {
               opacity: 0,
               // scale: 0.5,
-              // transform: "translateX(-100px)",
-              clipPath: "inset(100% 100% 0 0)",
+              transform: "translateX(-100px)",
+              // clipPath: "inset(100% 100% 0 0)",
           },
           "100%":{
             opacity: 1,
-            // transform: "translateX(0px)",
-            clipPath: "inset(0 0 0 0)",
+            transform: "translateX(0px)",
+            // clipPath: "inset(0 0 0 0)",
 
           },
 
