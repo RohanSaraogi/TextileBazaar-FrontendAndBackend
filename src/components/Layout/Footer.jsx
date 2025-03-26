@@ -110,8 +110,7 @@ const Footer = () => {
 
       <div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
-         text-center pt-2 text-[#153448] text-sm pb-8 animate-appear"
-         style={{animationTimeline:"view()",animationRange: "entry 0% cover 40%"}}
+         text-center pt-2 text-[#153448] text-sm pb-8"
       >
         <span>© 2024 DevanTech. All rights reserved.</span>
         <span>Terms · Privacy Policy</span>
